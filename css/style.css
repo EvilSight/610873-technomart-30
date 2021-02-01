@@ -1,0 +1,19 @@
+/*Variables*/
+:root {
+  --basic-dark-blue:#32425C;
+  --basic-light-blue:#3BBCE3;
+  --basic-orange:#FFBF47;
+  --basic-light-orange:##FFC047;
+  --basic-purple:#DC91D8;
+  --basic-red:#EE3643;
+  --basic-light-green:#8ED78F;
+  --basic-green:#63A63E;
+  --basic-background:#F3F7F9;
+}
+/* Global */
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans ";
+}
