@@ -1,30 +1,77 @@
 /*Variables*/
+
 :root {
-  --basic-dark-blue:#32425C;
-  --basic-light-blue:#3BBCE3;
-  --basic-orange:#FFBF47;
-  --basic-light-orange:##FFC047;
-  --basic-purple:#DC91D8;
-  --basic-red:#EE3643;
-  --basic-light-green:#8ED78F;
-  --basic-green:#63A63E;
-  --basic-background:#F3F7F9;
+  --basic-dark-blue: #32425C;
+  --basic-light-blue: #3BBCE3;
+  --basic-orange: #FFBF47;
+  --basic-light-orange: #FFC047;
+  --basic-purple: #DC91D8;
+  --basic-red: #EE3643;
+  --basic-light-green: #8ED78F;
+  --basic-green: #63A63E;
+  --basic-background: #F3F7F9;
 }
+
 /* Global */
+
 .page-body {
   min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans" "Cuprum";
 }
+
 .page-body a {
   text-decoration: none;
+  color: #fff;
 }
+
 /* main header */
+
 .main-header {
   font-size: 18px;
   line-height: 24px;
+  background-color: var(--basic-background);
 }
-.main-header-top {
+
+.main-header-top, .site-navigation {
   background-color: var(--basic-dark-blue);
+}
+
+.main-header-center p {
+  font-size: 16px;
+  line-height: 23px;
+  color: #EE3643;
+}
+
+.main-contacts-phone {
+  color: #32425C;
+  font-size: 21px;
+  line-height: 30px;
+  align-items: center;
+  width: 270px;
+  height: 45px;
+}
+
+.main-header-center address {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  width: 270px;
+  height: 24px;
+  color: #32425C;
+}
+
+.login a {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+}
+.login-link {
+  background-image: url(img/icon-login.svg);
 }
