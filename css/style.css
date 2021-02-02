@@ -11,9 +11,16 @@
   --basic-background:#F3F7F9;
 }
 /* Global */
-body {
+.page-body {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans ";
+  font-family: "PT Sans" "Cuprum";
+}
+a {
+  text-decoration: none;
+}
+/* main header */
+.main-header-top {
+  background-color: var(--basic-dark-blue);
 }
