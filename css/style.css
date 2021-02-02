@@ -21,9 +21,12 @@
   font-family: "PT Sans" "Cuprum";
 }
 
+.page-body ul {
+  list-style: none;
+}
+
 .page-body a {
   text-decoration: none;
-  color: #fff;
 }
 
 /* main header */
@@ -38,40 +41,156 @@
   background-color: var(--basic-dark-blue);
 }
 
+.main-header-top p input {
+  background-color: transparent;
+  height: 42px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+}
+
+.main-header-top p input::placeholder {
+  color: #fff;
+}
+
+.main-header-top a, .main-navigation li a {
+  color: #fff;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.checkout {
+  background-color: var(--basic-green);
+  width: 150px;
+  height: 42px;
+  outline: 2px solid black;
+  outline-offset: -2px;
+}
+
 .main-header-center p {
+  font-family: Cuprum;
+  font-style: italic;
+  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   color: #EE3643;
+  width: 197px;
+  height: 71px;
+  text-align: left;
 }
 
 .main-contacts-phone {
   color: #32425C;
   font-size: 21px;
   line-height: 30px;
-  align-items: center;
+  text-align: center;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: 700;
+  color: #EE3643;
+  border: 3px solid #FFFFFF;
+  padding: 7px 45px 8px 39px;
   width: 270px;
-  height: 45px;
+  height: 24px;
 }
 
 .main-header-center address {
   font-family: Cuprum;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  width: 270px;
+  width: 250px;
   height: 24px;
   color: #32425C;
+  margin-top: 3px;
 }
-
-.login a {
+.login li {
   font-family: Cuprum;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
   line-height: 21px;
-  color: #000;
+  color: #000000;
+  /* outline: 2px solid black;
+  outline-offset: -2px; */
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  display: inline-block;
+  padding: 12px 27px 12px 19px;
 }
+
 .login-link {
-  background-image: url(img/icon-login.svg);
+  width: 121px;
+}
+
+.login-reg {
+  width: 150px;
+}
+
+/* navigation */
+
+.site-navigation {}
+
+/* wrapper */
+
+.features-list {
+  display: block;
+  width: 300px;
+  color: #ffffff;
+  font-family: Cuprum;
+  line-height: 30px;
+}
+
+.features-list b {
+  font-size: 24px;
+}
+
+.features-list a {
+  display: block;
+  width: 135px;
+  height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.features-materials {
+  background-color: var(--basic-orange);
+}
+
+.features-tool {
+  background-color: var(--basic-light-blue);
+}
+
+.features-technic {
+  background-color: var(--basic-purple);
+}
+
+.features-discount {
+  background-color: var(--basic-light-green);
+}
+
+.features-delivery {
+  background-color: var(--basic-orange);
+}
+
+/* slider */
+
+.slider-part b {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.slider-part p {
+  font-size: 18px;
+  line-height: 24px;
 }
