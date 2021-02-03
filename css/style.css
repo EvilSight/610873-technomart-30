@@ -10,6 +10,7 @@
   --basic-light-green: #8ED78F;
   --basic-green: #63A63E;
   --basic-background: #F3F7F9;
+  --basic-creme: #F9F5F0;
 }
 
 /* Global */
@@ -23,6 +24,7 @@
 
 .page-body ul {
   list-style: none;
+  padding: 0;
 }
 
 .page-body a {
@@ -67,10 +69,12 @@
 
 .checkout {
   background-color: var(--basic-green);
+  /* outline: 2px solid black;
+  outline-offset: -2px; */
+  padding: 9px 16px 9px 19px;
   width: 150px;
-  height: 42px;
-  outline: 2px solid black;
-  outline-offset: -2px;
+  text-align: center;
+  align-items: center;
 }
 
 .main-header-center p {
@@ -110,6 +114,7 @@
   color: #32425C;
   margin-top: 3px;
 }
+
 .login li {
   font-family: Cuprum;
   font-style: normal;
@@ -122,7 +127,6 @@
   text-align: center;
   align-items: center;
   background-color: #fff;
-  display: inline-block;
   padding: 12px 27px 12px 19px;
 }
 
@@ -145,41 +149,52 @@
   width: 300px;
   color: #ffffff;
   font-family: Cuprum;
-  line-height: 30px;
 }
 
 .features-list b {
   font-size: 24px;
 }
 
-.features-list a {
-  display: block;
-  width: 135px;
+.features-btn {
+  width: 138px;
   height: 38px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
 }
 
 .features-materials {
   background-color: var(--basic-orange);
+  background-image: url("../img/buсket.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .features-tool {
   background-color: var(--basic-light-blue);
+  background-image: url("../img/drill.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .features-technic {
   background-color: var(--basic-purple);
+  background-image: url("../img/tractor.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .features-discount {
   background-color: var(--basic-light-green);
+  background-image: url("../img/basket.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .features-delivery {
   background-color: var(--basic-orange);
+  background-image: url("../img/car.svg");
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 /* slider */
@@ -193,4 +208,80 @@
 .slider-part p {
   font-size: 18px;
   line-height: 24px;
+}
+
+.slider-part a {
+  display: block;
+  width: 135px;
+  height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--basic-red);
+  color: #fff;
+}
+
+.slider-part b, .slider-part p {
+  outline: 2px solid black;
+  outline-offset: -2px;
+  margin: 0;
+}
+
+/* section product */
+
+.product-popular {
+  width: 940px;
+  height: 89px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  align-items: center;
+  text-transform: uppercase;
+  display: block;
+  background-color: var(--basic-creme);
+}
+
+.product-popular h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.product-popular a {
+  display: block;
+  width: 192px;
+  height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--basic-red);
+  color: #fff;
+}
+
+.product-item {
+  display: block;
+  width: 220px;
+  height: 318px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+}
+.product-item h3 {
+  font-size: 18px;
+line-height: 20px;
+}
+.product-item del {
+  font-size: 17px;
+line-height: 18px;
+}
+.product-btn {
+  color: #fff;
+  font-size: 17px;
+  line-height: 18px;
+  width: 141px;
+  height: 38px;
+  background-color: var(--basic-red);
 }
