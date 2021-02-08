@@ -430,7 +430,22 @@ p {
   width: 50%;
   float: left;
 }
-
+.about-company li {
+  padding-left: 37px;
+  position: relative;
+  /* background-image: url("../img/line.svg");
+  background-position: left center;
+  background-repeat: no-repeat; */
+}
+.about-company li::before {
+  display: block;
+  width: 25px;
+  content: '';
+  position: absolute;
+  border-bottom: 2px solid #EE3643;
+  top:50%;
+  left: 0px;
+}
 .about-contacts {
   width: 50%;
   float: right;
