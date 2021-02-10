@@ -11,45 +11,55 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/normalize.css">
+  <link href="сss/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <div>
-      <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
-      <p><input name="Поиск" placeholder="Поиск:"></p>
-      <a>Закладки:0</a>
-      <a>Корзина:10</a>
-      <a>Оформить заказ</a>
-    </div>
-    <div>
+<body class="page-body">
+  <header class="main-header">
+    <ul class="main-header-top">
+      <li><a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
+      <li><input type="text" name="Поиск" placeholder="Поиск:"></p></li>
+      <li><a href="#">Закладки:0</a></li>
+      <li><a href="#">Корзина:0</a></li>
+      <li><a class="checkout" href="#">Оформить заказ</a></li>
+    </ul>
+    <div class="main-header-center">
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+      <a class="main-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
       <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-      <ul>
-        <li>
-          <a href="#">Равшан Джамшутович</a>
-          <a href="#">Выход</a>
+      <ul class="login">
+        <li class="login-link">
+          <a href="#"><img src="img/icon-login.svg" alt="login">Войти</a>
         </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">Мои заказы</a>
-          <a href="#">Личный кабинет</a>
+        <li class="login-reg">
+          <a href="#">Регистрация</a>
         </li>
       </ul>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Спецпредложения</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li>
+          <a href="index.html">Главная</a>
+        </li>
+        <li>
+          <a href="#">Компания</a>
+        </li>
+        <li>
+          <a href="catalog.html">Каталог</a>
+        </li>
+        <li>
+          <a href="#">Новости</a>
+        </li>
+        <li>
+          <a href="#">Спецпредложения</a>
+        </li>
+        <li>
+          <a href="#">Доставка</a>
+        </li>
+        <li>
+          <a href="#">Контакты</a>
+        </li>
       </ul>
     </nav>
   </header>
