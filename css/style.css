@@ -65,17 +65,28 @@ p {
   background-color: var(--basic-background);
 }
 
-.main-menu {
+.main-header-menu {
   background-color: var(--basic-dark-blue);
 }
 
-.main-menu li a {
-  display: inline-block;
-  background-image: url("../img/icon-bookmark.svg");
+.main-header-logo {
+  display: block;
+}
+
+.main-menu-link {
+  display: block;
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 14px 16px;
   padding-left: 23px;
+}
+
+.bookmark {
+  background-image: url("../img/icon-bookmark.svg");
+}
+
+.cart {
+  background-image: url("../img/icon-cart.svg");
 }
 
 .search {
@@ -86,6 +97,7 @@ p {
   font-size: 18px;
   color: #fff;
   border: none;
+  display: block;
 }
 
 .search::placeholder {
@@ -107,6 +119,7 @@ p {
   width: 150px;
   text-align: center;
   align-items: center;
+  background-image: none;
 }
 
 .main-header-center p {
@@ -315,12 +328,24 @@ p {
 }
 
 .product-btn {
+  font-family: var(--basic-font-ptsans);
+  display: block;
+  border-radius: 3px;
   color: #fff;
   font-size: 17px;
   line-height: 18px;
   width: 141px;
   height: 38px;
   background-color: var(--basic-red);
+  position: relative;
+}
+
+.product-btn::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  border: 19px solid #fff;
+  border-left-color: #EE3643;
 }
 
 /* manufacturers section */
@@ -349,8 +374,7 @@ p {
   background-color: var(--basic-nav-blue);
   width: 240px;
   height: 61px;
-  font-family: "Cuprum", sans-serif;
-  ;
+  font-family: var(--basic-font-cuprum);
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
@@ -404,8 +428,7 @@ p {
 }
 
 .about p {
-  font-family: "PT Sans", Arial, sans-serif;
-  ;
+  font-family: var(--basic-font-ptsans);
   font-size: 13px;
   line-height: 24px;
   font-style: normal;
@@ -531,7 +554,7 @@ p {
   margin: 0;
 }
 
-.feedback li {
+.feedback-item {
   font-family: var(--basic-font-cuprum);
   font-size: 16px;
   line-height: 18px;
@@ -540,10 +563,10 @@ p {
   height: 37px;
 }
 
-.feedback li span {
+.feedback-item span {
   color: #fff;
 }
 
-.feedback li a {
+.feedback-item a {
   color: #FFD180;
 }
