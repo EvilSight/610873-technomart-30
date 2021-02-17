@@ -73,7 +73,7 @@ p {
   display: block;
 }
 
-.main-menu-link {
+.main-menu-link, .search {
   display: block;
   background-position: left center;
   background-repeat: no-repeat;
@@ -90,6 +90,7 @@ p {
 }
 
 .search {
+  background-image: url("../img/icon-search.svg");
   background-color: transparent;
   height: 42px;
   font-family: var(--basic-font-cuprum);
