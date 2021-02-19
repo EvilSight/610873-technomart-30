@@ -454,7 +454,9 @@ p {
   height: 356px;
   display: block;
 }
-
+.about h2 {
+  text-transform: uppercase;
+}
 .about p {
   font-family: var(--basic-font-ptsans);
   font-size: 13px;
