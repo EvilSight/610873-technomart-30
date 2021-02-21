@@ -186,7 +186,7 @@ p {
   margin-top: 3px;
 }
 
-.login li {
+.login-link, .login-reg {
   font-family: var(--basic-font-cuprum);
   font-size: 21px;
   line-height: 21px;
@@ -205,7 +205,9 @@ p {
 .login-reg {
   width: 150px;
 }
-
+.login-in {
+  width: 299px;
+}
 /* navigation */
 
 .site-navigation {
