@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link rel="icon" href="favicon.ico">
-  <link href="сss/normalize.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -19,7 +19,12 @@
   <header class="main-header">
     <div class="main-header-menu">
       <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="logo"></a>
-      <input class="search" type="text" name="Поиск" placeholder="Поиск:">
+      <div class="header-upper-search">
+        <form action="/search" method="post">
+            <input type="search" name="search" class="search" placeholder="Поиск:" required>
+            <label for="search"></label>
+        </form>
+    </div>
       <ul class="main-menu">
         <li class="main-menu-item"><a class="main-menu-link bookmark" href="#">Закладки: 0</a></li>
         <li class="main-menu-item"><a class="main-menu-link cart" href="#">Корзина: 0</a></li>
@@ -99,13 +104,13 @@
               <b>Перфораторы</b>
               <p>Настоящие мужские игрушки</p>
               <img src="img/slider-first.jpg" alt="builder with perforator">
-              <a href="catalog.html">Открыть каталог</a>
+              <a class="slider-link" href="catalog.html">Открыть каталог</a>
             </li>
-            <li class="slider-part" hidden>
+            <li class="slider-part">
               <b>Дрели</b>
               <p>Соседям на радость!</p>
               <img src="img/slider-second.jpg" alt="builder with drill">
-              <a href="catalog.html">Открыть каталог</a>
+              <a class="slider-link" href="catalog.html">Открыть каталог</a>
             </li>
           </ul>
           <button type="button slider-button slider-button-back">Назад</button>
@@ -179,34 +184,32 @@
     </section>
     <section class="services">
       <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши
-        покупки приятными</p>
+      <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+      <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
       <ul class="services-list">
         <li class="services-item">
-          <a href="#">Доставка</a>
+          <a class="services-item-link" href="#">Доставка</a>
         </li>
         <li class="services-item">
-          <a href="#">Гарантия</a>
+          <a class="services-item-link" href="#">Гарантия</a>
         </li>
         <li class="services-item">
-          <a href="#">Кредит</a>
+          <a class="services-item-link" href="#">Кредит</a>
         </li>
       </ul>
       <ul class="methods-list">
-        <li class="delivery">
+        <li class="methods-list-item delivery">
           <b>Доставка</b>
-          <p>Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем,
-            поднимая его на ваш этаж!</p>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+          <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         </li>
-        <li class="guarantee" hidden>
+        <li class="methods-list-item guarantee" hidden>
           <b>Гарантия</b>
           <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его
             возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж
             восстановите как-нибудь сами.</p>
         </li>
-        <li class="credit" hidden>
+        <li class="methods-list-item credit" hidden>
           <b>Кредит</b>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
         </li>
