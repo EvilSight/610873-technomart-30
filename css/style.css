@@ -149,35 +149,14 @@ p {
 ::placeholder {
   color: #fff;
 }
-.header-upper-search label {
-  position: relative;
-}
-
-.header-upper-search label::before {
-  position: absolute;
-  top: 12px;
-  left: -252px;
-  font-size: 17px;
-  display: inline-block;
-  vertical-align: top;
-  text-decoration: inherit;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  color: #6a7180;
-}
-
-input[type="search"]:hover ~ label::before {
-  color: #ffffff;
-}
-
-input[type="search"]:focus ~ label::before,
-input[type="search"]:active ~ label::before {
-  color: #ee3643;
-}
-
-.header-upper-search input:focus {
-  background-color: #ffffff;
+.search {
+  background-color: transparent;
+  height: 42px;
+  font-family: var(--basic-font-cuprum);
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  border: none;
 }
 .main-menu a, .main-navigation li a {
   color: #fff;
