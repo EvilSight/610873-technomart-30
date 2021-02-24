@@ -1051,6 +1051,47 @@ font-weight: 400;
   margin: 0 auto;
   padding: 0 10px;
 }
+/* bottom paginator */
+.catalog-paginator {
+  margin: 30px 0 60px;
+}
+
+.catalog-paginator .active,
+.catalog-paginator a {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 7px;
+  padding: 9px 0;
+  width: 36px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.catalog-paginator .active {
+  color: #fff;
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.catalog-paginator .next {
+  width: 138px;
+}
+
+.catalog-paginator a:hover {
+  border-color: #bdc6ca;
+}
+
+.catalog-paginator a:active {
+  border-color: #ee3643;
+}
 
 /* container (catalog) */
 /* footer */
