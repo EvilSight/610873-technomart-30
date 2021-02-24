@@ -471,28 +471,17 @@ input[type=range]::-moz-range-thumb {
   color: #000;
 }
 
-.catalog-filter-range b::before, .catalog-filter-brands b::before, .catalog-filter-power b::before {
-  position: absolute;
-  right: 5px;
-  font-size: 28px;
-  color: green;
-}
-
-.catalog-filter-range b:hover::before, .catalog-filter-brands b:hover::before, .catalog-filter-power b:hover::before {
-  color: green;
-}
-
-.catalog-filter-brands ul, .catalog-filter-power ul {
+.catalog-filter-brands-list, .catalog-filter-power-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.catalog-filter-brands ul {
+.catalog-filter-brands-list {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.catalog-filter-power ul {
+.catalog-filter-power-list {
   margin-bottom: 50px;
 }
 
@@ -503,15 +492,15 @@ input[type=range]::-moz-range-thumb {
   text-transform: uppercase;
 }
 
-.catalog-filter-brands label, .catalog-filter-power label {
+.catalog-filter-brands-list label, .catalog-filter-power-list label {
   cursor: pointer;
 }
 
-.catalog-filter-brands label:hover, .catalog-filter-power label:hover {
+.catalog-filter-brands-list label:hover, .catalog-filter-power-list label:hover {
   color: #222;
 }
 
-.catalog-filter-brands input, .catalog-filter-power input {
+.catalog-filter-brands-list input, .catalog-filter-power-list input {
   position: relative;
   display: none;
 }
@@ -519,8 +508,12 @@ input[type=range]::-moz-range-thumb {
   position: relative;
   margin-right: 35px;
 }
-.catalog-filter-brands input+.check::before,
-.catalog-filter-power input+.check::before {
+.catalog-filter-brands-list input:disabled ,
+.catalog-filter-power-list input:disabled::before {
+  opacity: 0.3;
+}
+.catalog-filter-power-list input+.check::before,
+.catalog-filter-power-list input+.check::before {
   width: 25px;
   height: 25px;
   content: "";
@@ -532,27 +525,25 @@ input[type=range]::-moz-range-thumb {
   background-position: left center;
   background-repeat: no-repeat;
 }
-.catalog-filter-power input[type="radio"]+.check::before {
+.catalog-filter-power-list input[type="radio"]+.check::before {
   background-image: url("../img/radio-off.svg");
 }
-.catalog-filter-brands input:checked+.check::before {
-  margin-right: 6px;
-  background-image: url("../img/radio-on.svg")
+.catalog-filter-brands-list input:checked+.check::before {
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 0.3;
+}
+.catalog-filter-power-list input:checked+.check::before {
+  background-image: url("../img/radio-on.svg");
+  opacity: 0.3;
 }
 
-.catalog-filter-power input+.check::before {
-  margin-right: 9px;
+.catalog-filter-brands-list input:hover+.check::before,
+.catalog-filter-power-list input:hover+.check::before {
+  opacity: 0.5;
 }
 
-.catalog-filter-power input:checked+.check::before {}
-
-.catalog-filter-brands input:hover+.check::before,
-.catalog-filter-power input:hover+.check::before {
-  color: #999;
-}
-
-.catalog-filter-brands input:disabled+.check::before,
-.catalog-filter-power input:disabled+.check::before {
+.catalog-filter-brands-list input:disabled+.check::before,
+.catalog-filter-power-list input:disabled+.check::before {
   color: #e1e1e1;
 }
 
