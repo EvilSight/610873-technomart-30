@@ -172,22 +172,18 @@
               </label>
           </ul>
         </div>
-        <button type="submit">Показать</button>
+        <button type="button" class="show">Показать</button>
       </form>
     </aside>
     <div>
-      <div>
-        <b>Сортировка:</b>
-        <ul>
-          <li><button>по цене</button></li>
-          <li><button>по типу</button></li>
-          <li><button>по функционалу</button></li>
-        </ul>
-        <ul>
-          <li><img src="img/icon-up.svg" alt="up"></li>
-          <li><img src="img/icon-down.svg" alt="down"></li>
-        </ul>
-      </div>
+      <div class="catalog-controls clearfix">
+        <span>Сортировка:</span>
+        <a href="#" class="icon-down-dir"></a>
+        <a href="#" class="icon-up-dir active"></a>
+        <a href="#" class="sorting">По функционалу</a>
+        <a href="#" class="sorting active">По типу</a>
+        <a href="#" class="sorting">По цене</a>
+    </div>
       <ul class="product-list">
         <li class="product-item">
           <span class="flag"></span>

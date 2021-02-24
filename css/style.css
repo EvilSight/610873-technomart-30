@@ -554,6 +554,83 @@ input[type=range]::-moz-range-thumb {
   background-color: #f7f3ec;
   border-radius: 0 0 3px 3px;
 }
+.show {
+  display: block;
+  border: none;
+  box-sizing: border-box;
+  background-image: url("../img/showbtn.png");
+  width: 220px;height: 38px;
+  text-transform: uppercase;
+  font-family: var(--basic-font-ptsans);
+  font-weight: 400;
+}
+/* sort */
+
+.catalog-controls {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 7px 15px;
+  font-size: 12px;
+  line-height: 23px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.catalog-controls a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.catalog-controls span {
+  float: left;
+}
+
+.catalog-controls .sorting {
+  float: right;
+  margin-right: 60px;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.catalog-controls .sorting:hover {
+  color: #000;
+  border-bottom-style: solid;
+}
+
+.catalog-controls .sorting:active {
+  color: #ee3643;
+  border-color: transparent;
+}
+
+.catalog-controls .sorting.active {
+  color: #ee3643;
+  border-color: transparent;
+  pointer-events: none;
+}
+
+.catalog-controls .icon-up-dir,
+.catalog-controls .icon-down-dir {
+  float: right;
+  font-size: 23px;
+}
+
+.catalog-controls .icon-up-dir:hover,
+.catalog-controls .icon-down-dir:hover {
+  color: #000;
+}
+
+.catalog-controls .icon-up-dir:active,
+.catalog-controls .icon-down-dir:active {
+  color: #ee3643;
+}
+
+.catalog-controls .icon-up-dir.active,
+.catalog-controls .icon-down-dir.active {
+  color: #ee3643;
+  pointer-events: none;
+}
+/* sort */
 
 /* wrapper */
 
