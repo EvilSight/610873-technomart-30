@@ -477,11 +477,11 @@ input[type=range]::-moz-range-thumb {
   list-style: none;
 }
 
-.catalog-filter-brands-list {
+.catalog-filter-brands-list ul {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.catalog-filter-power-list {
+.catalog-filter-power ul {
   margin-bottom: 50px;
 }
 
@@ -512,7 +512,7 @@ input[type=range]::-moz-range-thumb {
 .catalog-filter-power-list input:disabled::before {
   opacity: 0.3;
 }
-.catalog-filter-power-list input+.check::before,
+.catalog-filter-brands-list input+.check::before,
 .catalog-filter-power-list input+.check::before {
   width: 25px;
   height: 25px;
