@@ -1127,3 +1127,55 @@ font-weight: 400;
 .feedback-item a {
   color: #FFD180;
 }
+.feedback-item a:hover {
+  text-decoration: underline;
+}
+.feedback-item a:active {
+  text-decoration: none;
+  color: var(--basic-red);
+}
+
+.footer-list-first-item a:hover,
+.footer-list-second-item a:hover {
+  text-decoration:underline;
+}
+.footer-list-first-item a:active,
+.footer-list-second-item a:active {
+  opacity:0.5;
+  text-decoration:none;
+}
+.footer-social-list .social-btn {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--basic-superdark-blue);
+  position: relative;
+}
+.social-btn:before {
+  content: "";
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.icon-vk::before {
+  background-image: url("../img/icon-vk.svg");
+  background-size: 25px 14px;
+}
+.icon-facebook::before {
+  background-image: url("../img/icon-fb.svg");
+  background-size: 12px 22px;
+}
+.icon-instagram::before {
+  background-image: url("../img/icon-insta.svg");
+  background-size: 21px 21px;
+}
+.social-btn:hover,
+.social-btn:active {
+  background-color: var(--basic-red);
+}
+
