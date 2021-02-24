@@ -130,12 +130,11 @@ p {
 .cart:hover {
   background-image: url("../img/icon-cart.svg");
 }
-
+.main-menu-form {
+  width: 270px;
+  height: 42px;
+}
 .search {
-  background-image: url("../img/icon-search.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 14px 16px;
   background-color: transparent;
   height: 42px;
   font-family: var(--basic-font-cuprum);
@@ -151,27 +150,40 @@ p {
 
 ::placeholder {
   color: #fff;
+  width: 220px;
 }
 
-.search:focus {
-  background-color: #fff;
+.search:focus-within {
+  background-color:#fff;
 }
-
-/* .search::before {
+input:focus::-webkit-input-placeholder {
+  color: #000;
+}
+.main-menu-form label {
+  position: relative;
+}
+.main-menu-form label:before {
   display: block;
   content: "";
   background-image: url("../img/icon-search.svg");
   background-position: left center;
   background-repeat: no-repeat;
-  background-size: 14px 16px;
+  background-size: 17px 17px;
+  width: 17px;
   opacity: 0.3;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   position: absolute;
-} */
+}
 
+.main-menu-form:hover {
+  background-image: url("../img/icon-search.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 17px 17px;
+}
 .main-menu a, .main-navigation li a {
   color: #fff;
   font-family: var(--basic-font-cuprum);
