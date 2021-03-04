@@ -77,7 +77,12 @@ p {
 .main-header-logo {
   display: block;
 }
+/* RED Basket */
+.basket {
+  background-color: var(--basic-red);
+}
 
+/* RED Basket */
 .main-menu-link {
   display: block;
   background-position: left center;
@@ -280,7 +285,7 @@ input:focus::-webkit-input-placeholder {
   margin-right: 17px;
 }
 
-.login-in {
+.login-item {
   font-family: var(--basic-font-cuprum);
   font-size: 21px;
   line-height: 21px;
@@ -292,14 +297,14 @@ input:focus::-webkit-input-placeholder {
   margin-bottom: 7px;
 }
 
-.login-inside {
+.login-inside-item {
   font-family: var(--basic-font-cuprum);
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
 }
 
-.login-inside a, .login-in a {
+.login-inside-item-link, .profile {
   color: #32425C;
 }
 
