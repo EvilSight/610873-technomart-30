@@ -17,6 +17,7 @@
 
 <body class="page-body">
   <header class="main-header">
+  <div class="main-header-menu-bar">
     <div class="main-header-menu">
       <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="logo"></a>
       <form class="main-menu-form" action="search">
@@ -29,6 +30,7 @@
         <li class="main-menu-item"><a class="main-menu-link checkout" href="#">Оформить заказ</a></li>
       </ul>
     </div>
+  </div>
     <div class="main-header-center">
       <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <a class="main-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -70,6 +72,7 @@
   </header>
   <main class="wrapper">
     <section class="features">
+      <div class="container">
       <ul class="features-list">
         <li class="features-item materials">
           <span class="flag flag-new"></span>
@@ -98,30 +101,33 @@
         <li class="features-item delivery">
           <span class="flag"></span>
           <b>Доставка</b>
-          <a class="features-item btn" href="#">Бесплатно</a>
+          <a class="features-btn" href="#">Бесплатно</a>
           <!-- <img src="img/car.svg" alt="car" width="78" height="63"> -->
         </li>
-        <li>
-          <ul class="slider">
+        <li class="slider">
+          <ul>
             <li class="slider-part">
               <b>Перфораторы</b>
               <p>Настоящие мужские игрушки</p>
               <img src="img/slider-first.jpg" alt="builder with perforator">
               <a class="slider-link" href="catalog.html">Открыть каталог</a>
             </li>
-            <li class="slider-part">
+            <li class="slider-part" hidden>
               <b>Дрели</b>
               <p>Соседям на радость!</p>
               <img src="img/slider-second.jpg" alt="builder with drill">
               <a class="slider-link" href="catalog.html">Открыть каталог</a>
             </li>
+            <li>
+              <a class="slide-control-left" href="#"></a>
+              <a class="slide-control-right" href="#"></a>
+            </li>
           </ul>
-          <button type="button slider-button slider-button-back">Назад</button>
-          <button type="button slider-button slider-button-next">Вперёд</button>
         </li>
-      </ul>
+      </ul></div>
     </section>
     <section class="product">
+      <div class="container">
       <div class="product-popular">
         <h2>Популярные товары:</h2>
         <a href="#">Все популярные товары</a>
@@ -155,9 +161,10 @@
           <del>22500 Р.</del>
           <a class="product-btn" href="#">12500 Р.</a>
         </li>
-      </ul>
+      </ul></div>
     </section>
     <section class="manufacturers">
+      <div class="container">
       <div class="product-popular">
         <h2>Популярные производители:</h2>
         <a href="#">Все производители</a>
@@ -187,9 +194,10 @@
         <li class="manufacturers-item">
           <a href="#"><img width="220" height="145" src="img/Metabo.jpg" alt="metabo"></a>
         </li>
-      </ul>
+      </ul></div>
     </section>
     <section class="services">
+      <div class="container">
       <h2>Сервисы</h2>
       <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
       <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -221,8 +229,10 @@
           <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
         </li>
       </ul>
+    </div>
     </section>
     <div class="about">
+      <div class="container">
       <section class="about-company">
         <h2>КОМПАНИЯ «Техномарт»</h2>
         <p>
@@ -245,6 +255,7 @@
         <img src="img/map.jpg" alt="map">
         <a class="about-write-us" href="#">Заблудились? Напишите нам!</a>
       </section>
+    </div>
     </div>
   </main>
   <footer class="main-footer">
