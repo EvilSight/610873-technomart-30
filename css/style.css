@@ -1059,8 +1059,7 @@ font-weight: 400;
 /* about company */
 
 .about {
-  height: 356px;
-  display: block;
+  display: grid;
 }
 
 .about p {
@@ -1090,12 +1089,10 @@ font-weight: 400;
   background-color: var(--basic-red);
   color: #fff;
 }
-
-.about-company {
-  width: 50%;
-  float: left;
+.about-company p {
+  display: block;
+  width: 460px;
 }
-
 .about-company li {
   padding-left: 37px;
   position: relative;
@@ -1112,11 +1109,6 @@ font-weight: 400;
   border-bottom: 2px solid #EE3643;
   top: 50%;
   left: 0px;
-}
-
-.about-contacts {
-  width: 50%;
-  float: right;
 }
 
 .about-contacts a {
