@@ -98,9 +98,9 @@ ul.main-menu {
   display: grid;
 }
 
-.main-header-center {}
+/* .main-header-center {}
 
-.main-header-navigation {}
+.main-header-navigation {} */
 
 /* ПОДСВЕТКА */
 
@@ -840,7 +840,7 @@ input[type=range]::-moz-range-thumb {
 .slide-control-left::before, .slide-control-right::before {
   position: absolute;
   top: 50%;
-  12345w background-image: url("../img/icon-left.svg");
+  background-image: url("../img/icon-left.svg");
   background-repeat: no-repeat;
   background-size: 23px 41px;
 }
@@ -956,7 +956,7 @@ input[type=range]::-moz-range-thumb {
 .manufacturers-list {
   display: grid;
   grid-template-columns: repeat(4, 220px);
-  grid-template-rows: repeat(2, 145px) );
+  grid-template-rows: repeat(2, 145px);
   gap: 20px;
 }
 .manufacturers-item {
