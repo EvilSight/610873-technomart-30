@@ -84,6 +84,7 @@ p {
 
 .main-header-menu-bar {
   background-color: var(--basic-dark-blue);
+  width: 1200px;
 }
 
 .main-header-menu {
@@ -98,9 +99,14 @@ ul.main-menu {
   display: grid;
 }
 
-/* .main-header-center {}
-
-.main-header-navigation {} */
+.main-header-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.main-header-center-contacts {
+  margin: 41px 69px 40px 93px;
+}
+.main-header-navigation {}
 
 /* ПОДСВЕТКА */
 
@@ -847,7 +853,7 @@ input[type=range]::-moz-range-thumb {
 
 /* section product */
 
-.product {
+.product-grid {
   display: grid;
   grid-template-rows: 89px 318px;
   row-gap: 20px;
@@ -947,11 +953,13 @@ input[type=range]::-moz-range-thumb {
 /* manufacturers section */
 
 .manufacturers {
+  margin-top: 59px;
+  margin-bottom: 59px;
+}
+.manufacturers-grid {
   display: grid;
   grid-template-rows: 89px 310px;
   row-gap: 20px;
-  margin-top: 59px;
-  margin-bottom: 59px;
 }
 .manufacturers-list {
   display: grid;
@@ -1057,26 +1065,17 @@ font-weight: 400;
 }
 
 /* about company */
-
 .about {
+  margin-bottom: 70px;
+}
+.about-grid {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 180px;
 }
-
-.about p {
-  font-family: var(--basic-font-ptsans);
-  font-size: 13px;
-  line-height: 24px;
-  font-style: normal;
+.about-company h2 {
+  margin-bottom: 24px;
 }
-
-.about li {
-  font-family: var(--basic-font-cuprum);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  font-style: normal;
-}
-
 .about-company a {
   display: block;
   font-family: var(--basic-font-cuprum);
@@ -1092,13 +1091,28 @@ font-weight: 400;
 .about-company p {
   display: block;
   width: 460px;
-}
-.about-company li {
-  padding-left: 37px;
-  position: relative;
+  font-family: var(--basic-font-ptsans);
+  font-size: 13px;
+  line-height: 24px;
+  font-style: normal;
+  margin-bottom: 30px;
 }
 
-.about-company li::before {
+ul.about-company-list {
+  margin-top: 1px;
+  margin-bottom: 20px;
+}
+.about-company-list li {
+  padding-left: 37px;
+  position: relative;
+  font-family: var(--basic-font-cuprum);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.about-company-list li::before {
   display: block;
   width: 25px;
   content: '';
@@ -1193,9 +1207,13 @@ font-weight: 400;
 /* container (catalog) */
 
 /* footer */
-
+.footer-upper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .main-footer {
   width: 1200px;
+  background-color: var(--basic-nav-blue);
 }
 
 .footer-menu {
@@ -1205,6 +1223,10 @@ font-weight: 400;
 
 .footer-last {
   background-color: var(--basic-dark-blue);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 34px;
+  padding-bottom: 29px;
 }
 
 .footer-list-first li, .footer-list-second li {
@@ -1249,7 +1271,9 @@ font-weight: 400;
   color: #fff;
   margin: 0;
 }
-
+.feedback-list {
+  display: flex;
+}
 .feedback-item {
   font-family: var(--basic-font-cuprum);
   font-size: 16px;
@@ -1286,14 +1310,19 @@ font-weight: 400;
 }
 
 .footer-social-list .social-btn {
-  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--basic-superdark-blue);
   position: relative;
 }
-
+ul.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+.social-btn {
+  display: block;
+}
 .social-btn:before {
   content: "";
   background-position: center center;
