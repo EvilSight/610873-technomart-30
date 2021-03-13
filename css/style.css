@@ -870,9 +870,15 @@ input[type=range]::-moz-range-thumb {
 
 .product-list {
   display: grid;
+  grid-template-columns: repeat(4, 220px);
+  grid-gap: 20px;
+}
+.catalog-list {
+  display: grid;
   grid-template-columns: repeat(3, 220px);
   grid-gap: 20px;
 }
+
 .product-popular {
   width: 940px;
   height: 89px;
