@@ -102,9 +102,6 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-ul.main-menu {
-  display: flex;
-}
 
 .main-header-center {
   display: flex;
@@ -122,7 +119,14 @@ ul.main-menu {
 /* ПОДСВЕТКА */
 
 .main-header-logo {
-  display: block;
+  width: 220px;
+  height: 100%;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b62530;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
 }
 
 /* RED Basket */
@@ -132,15 +136,6 @@ ul.main-menu {
 }
 
 /* RED Basket */
-
-.main-menu-link {
-  display: block;
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 14px 16px;
-  padding-left: 23px;
-  position: relative;
-}
 
 .bookmark:active,
 .cart:active {
@@ -248,23 +243,26 @@ input:focus::-webkit-input-placeholder {
   background-size: 17px 17px;
 }
 
-.main-menu a,
-.main-navigation li a {
+.main-menu-link {
+  display: block;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 14px 16px;
+  padding-left: 23px;
+  position: relative;
+  height: 42px;
   color: #fff;
   font-family: var(--basic-font-cuprum);
   font-size: 18px;
   line-height: 24px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .checkout {
   background-color: var(--basic-green);
-  /* outline: 2px solid black;
-  outline-offset: -2px; */
   padding: 9px 16px 9px 19px;
-  width: 150px;
-  text-align: center;
-  align-items: center;
-  background-image: none;
 }
 
 .checkout:hover {
