@@ -97,6 +97,7 @@ p {
   background-color: var(--basic-dark-blue);
   width: 100%;
 }
+
 .main-header-bar {
   display: flex;
   align-items: center;
@@ -118,7 +119,7 @@ p {
 
 /* ПОДСВЕТКА */
 
-.main-header-logo {
+.logo {
   width: 220px;
   height: 100%;
   background-color: #ee3643;
