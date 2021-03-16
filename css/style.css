@@ -398,7 +398,12 @@ input:focus::-webkit-input-placeholder {
   justify-content: space-around;
   align-items: center;
 }
-
+.site-navigation-item a {
+  font-size: 18px;
+  line-height: 24px;
+  font-family:var(--basic-font-cuprum);
+  color: #fff;
+}
 .site-navigation-item:hover {
   background-color: var(--basic-dark-blue);
 }
