@@ -105,16 +105,11 @@ p {
 }
 
 .main-header-center {
+  margin-top: 46px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.main-header-center-contacts {
-  margin: 41px 69px 40px 93px;
-}
-
-.main-header-navigation {
 }
 
 /* ПОДСВЕТКА */
@@ -280,6 +275,7 @@ input:focus::-webkit-input-placeholder {
   width: 197px;
   height: 71px;
   text-align: left;
+  margin-left: 30px;
 }
 
 .main-contacts-phone {
@@ -305,26 +301,38 @@ input:focus::-webkit-input-placeholder {
   color: #32425c;
   margin-top: 3px;
 }
+.login {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  display: flex;
+}
 
 .login-link,
 .login-reg {
+  background-color: #fff;
+  text-transform: none;
+  height: 45px;
+  color: #000;
+  margin-left: 10px;
+  min-width: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-family: var(--basic-font-cuprum);
   font-size: 21px;
   line-height: 21px;
-  color: #000000;
-  /* outline: 2px solid black;
-  outline-offset: -2px; */
-  text-align: center;
-  background-color: #fff;
-  padding: 12px 27px 12px 19px;
 }
 
 .login-link {
-  width: 121px;
+  min-width: 121px;
 }
 
 .login-reg {
-  width: 150px;
+  min-width: 150px;
 }
 
 .login-link a:hover,
@@ -1056,9 +1064,7 @@ section.product {
 }
 
 .product-item {
-  display: block;
   width: 220px;
-  height: 318px;
   font-family: var(--basic-font-ptsans);
   font-style: normal;
   font-weight: 700;
@@ -1066,6 +1072,30 @@ section.product {
   box-sizing: border-box;
   text-align: center;
   position: relative;
+  min-height: 318px;
+  /* margin: 0 0 20px 20px; */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 19px;
+}
+.product-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.product-item-info h3 {
+  font-size: 18px;
+  line-height: 20px;
+  margin: 10px 25px 11px;
+  text-align: center;
+  align-self: stretch;
+}
+.product-item-info del {
+  color: #a9a9a9;
+  margin-bottom: 10px;
+  margin-top: auto;
 }
 
 .product-item .flag {
