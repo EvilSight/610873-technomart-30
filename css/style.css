@@ -3,6 +3,7 @@
 :root {
   --basic-dark-blue: #293449;
   --basic-superdark-blue: #1d2739;
+  --basic-link-hover:#161D29;
   --basic-nav-blue: #32425c;
   --basic-light-blue: #3bbce3;
   --basic-orange: #ffbf47;
@@ -154,42 +155,6 @@ header .main-header-center {
 .bookmark svg {
   width: 14px;
 }
-/*
-.bookmark::before {
-  content: "";
-  background-image: url("../img/icon-bookmark.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 14px 16px;
-  opacity: 0.3;
-  top: 0;
-  left: 20px;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-}
-
-.bookmark:hover {
-  background-image: url("../img/icon-bookmark.svg");
-}
-
-.cart::before {
-  content: "";
-  background-image: url("../img/icon-cart.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 14px 16px;
-  opacity: 0.3;
-  top: 0;
-  left: 26px;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-}
-
-.cart:hover {
-  opacity: 1;
-} */
 
 .main-menu-form {
   width: 270px;
@@ -242,6 +207,13 @@ input:focus::-webkit-input-placeholder {
   bottom: 0;
   right: 0;
   position: absolute;
+}
+.main-menu-link:focus ,
+.main-menu-link:hover {
+  background-color: var(--basic-link-hover);
+}
+.main-menu-link:hover .main-menu-icon {
+  opacity: 1;
 }
 
 .main-menu-form:hover {
@@ -440,11 +412,10 @@ nav.main-navigation {
   margin-bottom: 60px;
 }
 .site-navigation {
-  width: 940px;
-  height: 60px;
+  width: 100%;
   background-color: var(--basic-nav-blue);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -453,6 +424,11 @@ nav.main-navigation {
   line-height: 24px;
   font-family: var(--basic-font-cuprum);
   color: #fff;
+  outline: 0;
+  display: block;
+  text-align: center;
+  padding: 16px 24px 20px 27px;
+  cursor: pointer;
 }
 
 .site-navigation-item:hover {
