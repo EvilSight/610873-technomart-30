@@ -590,7 +590,6 @@ aside {
   grid-template-areas: "filters results";
   grid-template-columns: 1fr 3fr;
   column-gap: 20px;
-  min-height: 100vh;
 }
 
 .catalog-filter-title {
