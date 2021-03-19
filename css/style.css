@@ -180,7 +180,9 @@ header .main-header-center {
   color: #fff;
   width: 220px;
 }
-
+::placeholder:focus-within {
+  color: #000;
+}
 .search:focus-within {
   background-color: #fff;
 }
@@ -214,13 +216,6 @@ input:focus::-webkit-input-placeholder {
 }
 .main-menu-link:hover .main-menu-icon {
   opacity: 1;
-}
-
-.main-menu-form:hover {
-  background-image: url("../img/icon-search.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: 17px 17px;
 }
 
 .main-menu-link {
@@ -322,7 +317,17 @@ input:focus::-webkit-input-placeholder {
 .login-link {
   min-width: 121px;
 }
-
+.login-link::before {
+  display: inline-block;
+  vertical-align: top;
+  content: "";
+  width: 20px;
+  height: 17px;
+  margin: 0 12px 0 -10px;
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
 .login-reg {
   min-width: 150px;
 }
