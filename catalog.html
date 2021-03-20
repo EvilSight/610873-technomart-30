@@ -124,14 +124,33 @@
       <aside>
         <form class="catalog-filter" name="Производители" method="post">
           <h3 class="catalog-filter-title">Фильтр:</h3>
-          <ul class="catalog-filter-range">
-            <b class="catalog-filter-price">Цена:</b>
-            <input type="range" min="0" max="30000" step="1" value="1">
-            <li class="catalog-price-controls">
-              <input type="text" class="min-price" name="min-price" value="0">
-              <input type="text" class="max-price" name="max-price" value="30000">
-            </li>
-          </ul>
+          <fieldset class="filter-item">
+            <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
+                    width: 30%;
+                    margin-left: 20%
+                  "></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
+                  left: 20%
+                "></div>
+                <div class="toggle toggle-max" tabindex="0" style="
+                  left: 50%
+                "></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  <input type="number" name="max-price" value="15000">
+                </label>
+              </div>
+            </div>
+        </fieldset>
           <div class="catalog-filter-brands">
             <b class="icon-up" href="#">Производители:</b>
             <ul class="catalog-filter-brands-list">
@@ -191,31 +210,29 @@
             <div class="filters__sorting">
               <ul class="filters__types">
                 <li>
-                  <button class="button filters__sort-button filters__sort-button--active" type="button" disabled>По
-                    цене</button>
+                  <a class="button filters__sort-button filters__sort-button--active" disabled>По цене</a>
                 </li>
                 <li>
-                  <button class="button filters__sort-button" type="button">По типу</button>
+                  <a class="button filters__sort-button">По типу</a>
                 </li>
                 <li>
-                  <button class="button filters__sort-button" type="button">По функционалу</button>
+                  <a class="button filters__sort-button">По функционалу</a>
                 </li>
               </ul>
               <ul class="filters__types filters__types--arrows">
                 <li>
-                  <button class="button filters__sort-button filters__sort-button--arrow filters__sort-button--active"
-                    type="button" disabled>
+                  <a class="button filters__sort-button filters__sort-button--arrow filters__sort-button--active" disabled>
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                       <path d="M5.5 0L0 10h11z" />
                     </svg>
-                  </button>
+                  </a>
                 </li>
                 <li>
-                  <button class="button filters__sort-button filters__sort-button--arrow filters__sort-button" type="button">
+                  <a class="button filters__sort-button filters__sort-button--arrow filters__sort-button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                       <path d="M5.5 10L0 0h11" />
                     </svg>
-                  </button>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -445,4 +462,42 @@
           </ul>
         </div>
   </footer>
+  <aside class="modal modal--map" aria-label="Карта с расположением офиса компания «Техномарт»">
+    <iframe class="modal__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6185250055455!2d30.32237148205787!3d59.93847194791091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1583568437848!5m2!1sen!2sru" width="940" height="446" allowfullscreen=""></iframe>
+    <button class="modal__close" type="button" aria-label="Закрыть всплывающее окно с картой"></button>
+  </aside>
+  <aside class="modal modal--feedback" aria-label="Форма обратной связи">
+    <form class="modal__form" action="https://echo.htmlacademy.ru/courses" method="POST" name="feedback">
+      <div class="modal__main">
+        <div class="modal__input-group">
+          <p class="modal__entry modal__entry--group">
+            <label class="modal__label" for="name">Ваше имя:</label>
+            <input class="modal__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal__entry modal__entry--group">
+            <label class="modal__label" for="feeedback-email">Ваш e-mail:</label>
+            <input class="modal__input" type="email" name="email" id="feeedback-email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="modal__entry">
+          <label class="modal__label" for="message">Текст письма:</label>
+          <textarea class="modal__input modal__textarea" name="message" id="message" cols="30" rows="6" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+      <footer class="modal__footer">
+        <button class="button button--red button--wide modal__button" type="submit">Отправить</button>
+      </footer>
+    </form>
+    <button class="modal__close" type="button" aria-label="Закрыть всплывающее окно с обратной связью"></button>
+  </aside>
+  <aside class="modal modal--basket">
+    <h2 class="modal__header modal__header--basket">Товар добавлен в корзину!</h2>
+    <footer class="modal__footer">
+      <a href="" class="button button--red modal__button">Оформить заказ</a>
+      <a href="catalog.html" class="button button--continue modal__button">Продолжить покупки</a>
+    </footer>
+    <button class="modal__close" type="button" aria-label="Продолжить покупки"></button>
+  </aside>
 </body>
+
+</html>
