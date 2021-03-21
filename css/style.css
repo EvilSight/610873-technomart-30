@@ -280,6 +280,7 @@ input:focus::-webkit-input-placeholder {
   margin-top: 3px;
 }
 .main-header-center-contacts {
+  margin-left: 93px;
   display: flex;
   align-items: center;
   flex-direction: column;
