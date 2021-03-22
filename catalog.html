@@ -24,8 +24,8 @@
             <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина Техномарт">
           </a>
           <form class="top-line__search" action="https://echo.htmlacademy.ru/courses" method="POST" name="search">
-            <input class="top-line__input" type="text" name="query" placeholder="Поиск:">
-            <label class="top-line__label">
+            <input class="top-line__input" type="text" name="query" id="query" placeholder="Поиск:">
+            <label class="top-line__label" for="query">
               <input class="top-line__submit" type="submit" aria-label="Поиск по сайту">
               <svg class="top-line__icon top-line__icon--search" width="17" height="17" viewBox="0 0 17 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -123,7 +123,7 @@
         <a class="breadcrumbs-link" href="#">Инструмент</a>
       </li>
       <li class="breadcrumbs-item">
-        <span class="breadcrumbs-link" href="#">Перфораторы</span>
+        <span class="breadcrumbs-link">Перфораторы</span>
       </li>
     </ul>
     <h2 class="inner-title">Перфораторы</h2>
@@ -152,7 +152,7 @@
             </div>
           </fieldset>
           <div class="catalog-filter-brands">
-            <b class="icon-up" href="#">Производители:</b>
+            <b class="icon-up">Производители:</b>
             <ul class="catalog-filter-brands-list">
               <li>
                 <label>
@@ -186,7 +186,7 @@
             </ul>
           </div>
           <div class="catalog-filter-power">
-            <b class="icon-up" href="#">Питание:</b>
+            <b class="icon-up">Питание:</b>
             <ul class="catalog-filter-power-list">
               <li><label>
                   <input type="radio" name="power" checked>
@@ -210,7 +210,7 @@
             <div class="filters__sorting">
               <ul class="filters__types">
                 <li>
-                  <a class="button filters__sort-button filters__sort-button--active" disabled>По цене</a>
+                  <a class="button filters__sort-button filters__sort-button--active">По цене</a>
                 </li>
                 <li>
                   <a class="button filters__sort-button">По типу</a>
@@ -221,8 +221,7 @@
               </ul>
               <ul class="filters__types filters__types--arrows">
                 <li>
-                  <a class="button filters__sort-button filters__sort-button--arrow filters__sort-button--active"
-                    disabled>
+                  <a class="button filters__sort-button filters__sort-button--arrow filters__sort-button--active">
                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                       <path d="M5.5 0L0 10h11z" />
                     </svg>
@@ -465,6 +464,7 @@
           </li>
         </ul>
       </div>
+    </div>
   </footer>
   <div class="modal modal--map" aria-label="Карта с расположением офиса компания «Техномарт»">
     <iframe class="modal__iframe"
