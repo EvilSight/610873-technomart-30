@@ -232,6 +232,7 @@ header .main-header-center {
 
 .top-line__input:focus {
   background-color: #ffffff;
+  color: #000;
 }
 
 input:focus::-webkit-input-placeholder {
@@ -245,10 +246,6 @@ input:focus::-webkit-input-placeholder {
 
 .top-line__input::placeholder {
   color: #ffffff;
-}
-
-.top-line__submit {
-  display: none;
 }
 
 .top-line__label {
