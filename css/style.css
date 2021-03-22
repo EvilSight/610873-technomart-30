@@ -534,6 +534,7 @@ section .breadcrumbs {
 .breadcrumbs-item:not(:last-child):after {
   content: "";
   display: inline-block;
+  vertical-align: middle;
   width: 8px;
   height: 12px;
   background-image: url("../img/icon-right-small.svg");
@@ -1593,7 +1594,7 @@ ul.catalog-paginator {
 }
 
 .catalog-paginator-item .active, .catalog-paginator-item a {
-  display: inline-block;
+  display: flex;
   vertical-align: top;
   margin-right: 10px;
   padding: 9px 0;
