@@ -1356,7 +1356,7 @@ ul.services-list {
 .services-list::before {
   content: "";
   width: 10px;
-  background-image: url("../img/Object.png");
+  background-image: url("../img/object.png");
   height: 279px;
   right: 0;
   top: 0;
