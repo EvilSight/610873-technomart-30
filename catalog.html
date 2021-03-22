@@ -23,9 +23,12 @@
           <a class="logo" href="index.html">
             <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина Техномарт">
           </a>
-          <form class="main-menu-form" action="search">
-            <label for="text"></label>
-            <input class="main-menu-item search" type="text" name="Поиск" placeholder="Поиск:">
+          <form class="top-line__search" action="https://echo.htmlacademy.ru/courses" method="POST" name="search">
+            <input class="top-line__input" type="text" name="query" placeholder="Поиск:">
+            <label class="top-line__label">
+              <input class="top-line__submit" type="submit" aria-label="Поиск по сайту">
+              <svg class="top-line__icon top-line__icon--search" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/></svg>
+            </label>
           </form>
           <a class="main-menu-link bookmark" href="#">Закладки: 0</a>
           <a class="main-menu-link cart basket" href="#">Корзина: 10</a>
@@ -146,7 +149,7 @@
                   <input type="number" name="min-price" value="0">
                 </label>
                 <label class="max-price">
-                  <input type="number" name="max-price" value="15000">
+                  <input type="number" name="max-price" value="30000">
                 </label>
               </div>
             </div>
@@ -398,40 +401,40 @@
               <img src="img/logo.svg" width="109" height="19" alt="Логотип интернет-магазина Техномарт">
             </a>
             <ul class="footer-list-first">
-              <li>
+              <li class="footer-list-first-item">
                 <a href="index.html">Компания</a>
               </li>
-              <li>
-                <a href="#">Новости</a>
+              <li class="footer-list-first-item">
+                <a  href="#">Новости</a>
               </li>
-              <li>
-                <a href="catalog.html">Каталог</a>
+              <li class="footer-list-first-item">
+                <a  href="catalog.html">Каталог</a>
               </li>
-              <li>
-                <a href="#">Доставка</a>
+              <li class="footer-list-first-item">
+                <a  href="#">Доставка</a>
               </li>
-              <li>
-                <a href="#">Контакты</a>
+              <li class="footer-list-first-item">
+                <a  href="#">Контакты</a>
               </li>
             </ul>
         </div>
         <div class="footer-upper-second">
-          <p class="footer-text">
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <div class="footer-text">
+            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </p>
+          </div>
           <ul class="footer-list-second">
-            <li>
-              <a href="#">Материалы</a>
+            <li class="footer-list-second-item">
+              <a  href="#">Материалы</a>
             </li>
-            <li>
-              <a href="#">Техника</a>
+            <li class="footer-list-second-item">
+              <a  href="#">Техника</a>
             </li>
-            <li>
-              <a href="#">Инструмент</a>
+            <li class="footer-list-second-item">
+              <a  href="#">Инструмент</a>
             </li>
-            <li>
-              <a href="#">Спецпредложения</a>
+            <li class="footer-list-second-item">
+              <a  href="#">Спецпредложения</a>
             </li>
           </ul>
         </div>
@@ -441,13 +444,13 @@
           <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
           <ul class="footer-social-list">
             <li class="footer-social-list-item">
-              <a class="social-btn button icon-vk" href="#"></a>
+              <a class="social-btn button icon-vk" href="#" alt="vkontakte"></a>
             </li>
             <li class="footer-social-list-item">
-              <a class="social-btn button icon-facebook" href="#"></a>
+              <a class="social-btn button icon-facebook" href="#" alt="facebook"></a>
             </li>
             <li class="footer-social-list-item">
-              <a class="social-btn button icon-instagram" href="#"></a>
+              <a class="social-btn button icon-instagram" href="#" alt="instagramm"></a>
             </li>
           </ul>
           <ul class="feedback-list">
@@ -462,11 +465,11 @@
           </ul>
         </div>
   </footer>
-  <aside class="modal modal--map" aria-label="Карта с расположением офиса компания «Техномарт»">
+  <div class="modal modal--map" aria-label="Карта с расположением офиса компания «Техномарт»">
     <iframe class="modal__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6185250055455!2d30.32237148205787!3d59.93847194791091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1583568437848!5m2!1sen!2sru" width="940" height="446" allowfullscreen=""></iframe>
     <button class="modal__close" type="button" aria-label="Закрыть всплывающее окно с картой"></button>
-  </aside>
-  <aside class="modal modal--feedback" aria-label="Форма обратной связи">
+  </div>
+  <div class="modal modal--feedback" aria-label="Форма обратной связи">
     <form class="modal__form" action="https://echo.htmlacademy.ru/courses" method="POST" name="feedback">
       <div class="modal__main">
         <div class="modal__input-group">
@@ -489,15 +492,15 @@
       </footer>
     </form>
     <button class="modal__close" type="button" aria-label="Закрыть всплывающее окно с обратной связью"></button>
-  </aside>
-  <aside class="modal modal--basket">
+  </div>
+  <div class="modal modal--basket">
     <h2 class="modal__header modal__header--basket">Товар добавлен в корзину!</h2>
     <footer class="modal__footer">
       <a href="" class="button button--red modal__button">Оформить заказ</a>
       <a href="catalog.html" class="button button--continue modal__button">Продолжить покупки</a>
     </footer>
     <button class="modal__close" type="button" aria-label="Продолжить покупки"></button>
-  </aside>
+  </div>
 </body>
 
 </html>
