@@ -958,25 +958,22 @@ ul.catalog-filter-power-list {
 .filters__sorting {
   display: flex;
   align-items: center;
+  justify-content:space-between;
   max-width: 500px;
 }
 
-.filters__types {
+ul.filters__types {
   list-style: none;
   padding: 0;
-  margin: 0 -68px 0 46px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-right: 46px;
 }
-
-.filters__types li {
-  margin-right: 68px;
+ul.filter__types li {
+  margin-right: 20px;
 }
-
-.filters__types--arrows {
+ul.filters__types--arrows {
   flex: 0 0 70px;
-  margin-right: -24px;
+  margin: -1px -24px 0px 0px;
 }
 
 .filters__types--arrows li {
@@ -984,7 +981,10 @@ ul.catalog-filter-power-list {
   display: flex;
   align-items: center;
 }
-
+.bytype {
+  margin-left: 70px;
+  margin-right: 65px;
+}
 .filters__sort-button {
   background-color: transparent;
   color: rgba(0, 0, 0, 0.3);
