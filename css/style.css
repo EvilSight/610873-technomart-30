@@ -108,7 +108,7 @@ p {
 
 header .main-header-center {
   margin-top: 42px;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1012,7 +1012,7 @@ aside {
 /* features */
 
 .features {
-  margin-top: 59px;
+  margin-top: 60px;
   margin-bottom: 59px;
 }
 
@@ -1070,23 +1070,23 @@ aside {
   background-color: var(--basic-orange);
   background-image: url("../img/bucket.svg");
   background-position-x: 83%;
-  background-position-y: 55%;
+  background-position-y: 51%;
   background-repeat: no-repeat;
 }
 
 .tool {
   background-color: var(--basic-light-blue);
   background-image: url("../img/drill.svg");
-  background-position-x: 87%;
-  background-position-y: 58%;
+  background-position-x: 86%;
+  background-position-y: 54%;
   background-repeat: no-repeat;
 }
 
 .technic {
   background-color: var(--basic-purple);
   background-image: url("../img/tractor.svg");
-  background-position-x: 85%;
-  background-position-y: 50%;
+  background-position-x: 86%;
+  background-position-y: 49%;
   background-repeat: no-repeat;
 }
 
@@ -1094,7 +1094,7 @@ aside {
   background-color: var(--basic-light-green);
   background-image: url("../img/basket.svg");
   background-position-x: 81%;
-  background-position-y: 51%;
+  background-position-y: 49%;
   background-repeat: no-repeat;
 }
 
@@ -1102,7 +1102,7 @@ aside {
   background-color: var(--basic-orange);
   background-image: url("../img/car.svg");
   background-position-x: 86%;
-  background-position-y: 53%;
+  background-position-y: 52%;
   background-repeat: no-repeat;
 }
 
@@ -1209,13 +1209,14 @@ section.product {
 
 .product-popular a {
   margin-right: 14px;
-  padding: 11px 24px 10px 24px;
+  padding: 11px 25px 9px 24px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   background-color: var(--basic-red);
   color: #fff;
+  margin-bottom: 4px;
 }
 
 .product-item {
@@ -1228,10 +1229,9 @@ section.product {
   text-align: center;
   position: relative;
   min-height: 318px;
-  /* margin: 0 0 20px 20px; */
   display: flex;
   flex-direction: column;
-  padding-bottom: 19px;
+  padding-bottom: 18px;
 }
 
 .product-item-info {
@@ -1590,7 +1590,7 @@ section.about-contacts, section.about-company {
   margin-top: 7px;
 }
 
-.about-company p {
+.about-company p , .about-contacts p {
   display: block;
   width: 460px;
   font-family: var(--basic-font-ptsans);
@@ -1603,6 +1603,7 @@ section.about-contacts, section.about-company {
   display: flex;
   width: 180px;
   flex-wrap: wrap;
+  margin-bottom: 8px;
 }
 ul.about-company-list {
   margin-top: 4px;
@@ -1758,6 +1759,7 @@ ul.catalog-paginator {
   background-color: var(--basic-dark-blue);
   padding-top: 34px;
   padding-bottom: 29px;
+  margin-top: 53px;
 }
 
 ul.footer-list-first {
@@ -1784,20 +1786,16 @@ ul.footer-list-first {
 }
 
 .footer-upper-second {
-  padding: 32px 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 22px 0 54px;
 }
 
 ul.footer-list-second {
-  padding: 32px 0 10px;
-  height: 49px;
+  height: 48px;
   justify-content: space-between;
   align-items: flex-end;
   display: flex;
-  margin-bottom: 10px;
 }
 .footer-list-second a {
   color: var(--basic-footer-nav);
@@ -1807,7 +1805,8 @@ ul.footer-list-second {
 }
 
 .footer-text {
-  margin: 0;
+  margin-left:2px;
+  margin-top: 20px;
 }
 
 .footer-text address, .footer-phone {
@@ -1835,13 +1834,19 @@ ul.footer-list-second {
   display: flex;
   justify-content: space-between;
 }
-
+.mail {
+  margin-left: 14px;
+  width: 137px;
+}
+.developed {
+  width: 98px;
+  margin-right: 13px;
+}
 .feedback-item {
   font-family: var(--basic-font-cuprum);
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  width: 137px;
   height: 37px;
 }
 
@@ -1870,7 +1875,9 @@ ul.footer-list-second {
   opacity: 0.5;
   text-decoration: none;
 }
+.footer-social-list-item {
 
+}
 .footer-social-list .social-btn {
   width: 44px;
   height: 44px;
@@ -1882,11 +1889,11 @@ ul.footer-list-second {
 ul.footer-social-list {
   display: flex;
   justify-content: center;
+  padding-right: 29px;
 }
 
 .social-btn {
   display: block;
-  margin-right: 4px;
 }
 
 .footer-social-list:last-child {
