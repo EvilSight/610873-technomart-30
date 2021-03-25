@@ -752,12 +752,13 @@ aside {
 }
 
 .range-controls .scale {
+  margin-top: 3px;
   height: 2px;
   background: #d7dcde;
 }
 
 .range-controls .bar {
-  width: 70%;
+  width: 152px;
   height: 2px;
   background: #00ca74;
 }
@@ -777,17 +778,17 @@ aside {
 }
 
 .range-controls .toggle-min {
-  left: 18px;
+  left: 8%;
+  top: 41%;
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 73%;
+  top: 41%;
 }
 
 .price-controls {
   display: flex;
-  justify-content: space-between;
-  padding-left: 6px;
 }
 
 .price-controls label {
@@ -817,7 +818,6 @@ aside {
   text-align: center;
   color: #283136;
   border: none;
-  border-radius: 5px;
   background: var(--basic-tel);
   font-family: inherit;
   font-size: inherit;
@@ -849,7 +849,10 @@ ul.catalog-filter-brands-list {
 ul.catalog-filter-power-list {
   margin: 25px 0 0 0;
 }
-
+label.max-price {
+  margin-left: 27px;
+  max-width: 95px;
+}
 .catalog-filter-brands-list ul {
   border-bottom: 1px solid #e5e5e5;
 }
