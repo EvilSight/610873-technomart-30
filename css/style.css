@@ -113,7 +113,9 @@ header .main-header-center {
   align-items: center;
   justify-content: space-between;
 }
-
+header .center-catalog {
+  margin-bottom: 38px;
+}
 /* ПОДСВЕТКА */
 
 .logo {
@@ -752,7 +754,7 @@ aside {
 }
 
 .range-controls .scale {
-  margin-top: 3px;
+  margin-top: 4px;
   height: 2px;
   background: #d7dcde;
 }
